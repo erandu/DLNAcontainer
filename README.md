@@ -5,7 +5,7 @@ Run minidlna within a small Docker container
 
 First build the container:
 
-```docker build -t erandu/dlnacontainer```
+```docker build -t erandu/dlnacontainer . ```
 
 ###  Network integration with Macvlan driver (Recommanded)
 
