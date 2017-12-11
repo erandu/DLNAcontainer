@@ -35,10 +35,10 @@ erandu/dlnacontainer
 ``` 
  Parameters :
  - ip : fixed IP address of the container 
- -<DIR>: repository of your data (which can be music, film or pictures)
+ - DIR : repository of your data (which can be music, film or pictures)
  
 ### Basic usage
-This mode is not recommended since you use --net=host
+This mode is not recommended since you use --net=host. Network stack is not virtualised.
 
 
 ```
