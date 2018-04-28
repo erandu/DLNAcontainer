@@ -28,9 +28,9 @@ docker network create -d macvlan \
  2nd Step :
 ```    
  docker run -d --name minidlna --net=macvlan_minidlna   \
- --ip 192.168.0.100 -v <MUSIC_DIR>:/var/lib/minidlna/music
--v <VIDEO_DIR>:/var/lib/minidlna/videos
--v <PIC_DIR>:/var/lib/minidlna/pictures
+ --ip 192.168.0.100 -v <MUSIC_DIR>:/var/lib/minidlna/music \
+-v <VIDEO_DIR>:/var/lib/minidlna/videos \
+-v <PIC_DIR>:/var/lib/minidlna/pictures \
 erandu/dlnacontainer
 ``` 
  Parameters :
@@ -42,9 +42,9 @@ This mode is not recommended since you use --net=host. Network stack is not virt
 
 
 ```
-docker run -d --name minidlna --net=host -p 8200:8200 -p 1900:1900/udp \
--v <MUSIC_DIR>:/var/lib/minidlna/music
--v <VIDEO_DIR>:/var/lib/minidlna/videos
--v <PIC_DIR>:/var/lib/minidlna/pictures
+docker run -d --name minidlna  -p 8200:8200 -p 1900:1900/udp \
+-v <MUSIC_DIR>:/var/lib/minidlna/music \
+-v <VIDEO_DIR>:/var/lib/minidlna/videos \
+-v <PIC_DIR>:/var/lib/minidlna/pictures \
 erandu/dlnacontainer
 ```
