@@ -9,7 +9,7 @@ First build the container:
 
 ###  Network integration with Macvlan driver (Recommanded)
 
-Using this mode, you integrate the container to the physical network. The container have a fix IP address and there is no need of port-mapping. This mode required Docker 1.12 at least. 
+Using this mode, the container is integrated to the physical network. The container have a fixed IP address and there is no need of port-mapping. This mode required Docker 1.12 at least. 
 
 1st Step :
 ```
@@ -38,7 +38,7 @@ erandu/dlnacontainer
  - DIR : repository of your data (which can be music, film or pictures)
  
 ### Basic usage
-This mode is not recommended since you use --net=host. Network stack is not virtualised.
+Use bridge network and port-mapping.
 
 
 ```
